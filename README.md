@@ -2,8 +2,7 @@
     <img src="https://sing-box.sagernet.org/assets/icon.svg" width="100px" align="center" />
     <h2 align="center">sing-box-templates</h2>
     <p align="center">
-        自己用的一些 <a href="https://sing-box.sagernet.org/zh/">sing-box</a> 配置文件模板, 支持 <a href="https://github.com/Toperlock/sing-box-subscribe">Toperlock/sing-box-subscribe</a> 远程调用。<br />
-        <strong>模板仅适用于客户端, 不适用于服务器和路由器。</strong>
+        搭配 <a href="https://github.com/Toperlock/sing-box-subscribe">Toperlock/sing-box-subscribe</a> 使用的 <a href="https://sing-box.sagernet.org/zh/">sing-box</a> 配置转换模板, 仅适用于客户端<br />
     </p>
 </p>
 
