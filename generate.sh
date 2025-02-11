@@ -53,6 +53,7 @@ CDN_Prefix=(
   https://gcore.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/
   https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/
   https://ghproxy.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/
+  https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/
   https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/
 )
 
