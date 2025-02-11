@@ -36,7 +36,7 @@
 - `DNS 协议` 的可选值: `doh`, `doq`, `dot`, `h3`
 - `中国 DNS 服务商` 的可选值: `ali`, `dnspod`
 - `国际 DNS 服务商` 的可选值: `adguard`, `cloudflare`, `google`, `opendns`
-- `规则集 CDN` 的可选值: `ghproxy.cn` (`github.site`, `github.store`), `ghproxy.net`, `fastly.jsdelivr.net`, `gcore.jsdelivr.net`, `testingcf.jsdelivr.net`
+- `规则集 CDN` 的可选值: `fastly.jsdelivr.net`, `gcore.jsdelivr.net`, `testingcf.jsdelivr.net`, `ghproxy.net`, `ghfast.top`(域名经常变动, 关注地址发布页 [ghproxy.link](https://ghproxy.link/))
 - `配置文件名称` 的可选值: 
   - 对于 `入站方式` 为 `mixed` 的, 可选值: `config.json`
   - 对于 `入站方式` 为 `tun` 的, 可选值: `config.json`, `config_fakeip.json`, `config_apple.json`
@@ -193,19 +193,11 @@ https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cate
 ```
 
 ```
-https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/category-games.json
-```
-
-```
-https://github.site/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/category-games.json
-```
-
-```
-https://github.store/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/category-games.json
-```
-
-```
 https://ghproxy.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/category-games.json
+```
+
+```
+https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/category-games.json
 ```
 
 可自行替换模板中使用的 CDN, 替换前推荐对这些 CDN 的域名进行 [网站测速](https://www.itdog.cn/http/)。另外不推荐 `cdn.jsdelivr.net`, 因为它偶尔会被墙。

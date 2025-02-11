@@ -49,13 +49,11 @@ declare -A opendns=(
 )
 
 CDN_Prefix=(
-  https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/
-  https://github.site/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/
-  https://github.store/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/
-  https://ghproxy.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/
   https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/
   https://gcore.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/
   https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/
+  https://ghproxy.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/
+  https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/
 )
 
 Protocol=(doh doq dot h3)
