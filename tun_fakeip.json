@@ -453,17 +453,6 @@
         "outbound": "🖥️ SSH"
       },
       {
-        "domain_suffix": [
-          "copymanga.site",
-          "copymanga.tv",
-          "mangafuna.xyz",
-          "mangafunb.fun",
-          "senzyo.net"
-        ],
-        "action": "route",
-        "outbound": "🚀 默认出站"
-      },
-      {
         "protocol": "bittorrent",
         "action": "route",
         "outbound": "🐢 直连"
