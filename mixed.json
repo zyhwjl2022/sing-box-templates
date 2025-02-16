@@ -240,22 +240,6 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "🖥️ SSH",
-      "type": "selector",
-      "outbounds": [
-        "🌏 日韩台新",
-        "🐢 直连",
-        "📌 单选节点",
-        "🇭🇰 香港节点",
-        "🇯🇵 日本节点",
-        "🇰🇷 韩国节点",
-        "🇹🇼 台湾节点",
-        "🇸🇬 新加坡节点",
-        "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
       "tag": "🇭🇰 香港节点",
       "type": "urltest",
       "outbounds": ["{all}"],
@@ -378,11 +362,6 @@
         "outbound": "🐢 直连"
       },
       {
-        "process_name": ["localsend", "localsend_app.exe"],
-        "action": "route",
-        "outbound": "🐢 直连"
-      },
-      {
         "clash_mode": "direct",
         "action": "route",
         "outbound": "🐢 直连"
@@ -391,21 +370,6 @@
         "clash_mode": "global",
         "action": "route",
         "outbound": "🚀 默认出站"
-      },
-      {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "process_name": ["ssh", "ssh.exe", "ssh-agent.exe"]
-          },
-          {
-            "rule_set": ["geoip_cn", "geosite_cn"],
-            "invert": true
-          }
-        ],
-        "action": "route",
-        "outbound": "🖥️ SSH"
       },
       {
         "protocol": "bittorrent",

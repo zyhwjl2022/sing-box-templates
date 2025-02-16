@@ -65,26 +65,9 @@
         "rewrite_ttl": 3600
       },
       {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "process_name": [
-              "ssh",
-              "ssh.exe",
-              "ssh-agent.exe",
-              "localsend",
-              "localsend_app.exe"
-            ],
-            "invert": true
-          },
-          {
-            "query_type": ["A", "AAAA"]
-          }
-        ],
+        "query_type": ["A", "AAAA"],
         "action": "route",
-        "server": "FakeIP",
-        "rewrite_ttl": 3600
+        "server": "FakeIP"
       },
       {
         "rule_set": "geosite_cn",
@@ -129,10 +112,7 @@
       "strict_route": true,
       "endpoint_independent_nat": false,
       "stack": "system",
-      "exclude_package": [
-        "com.android.captiveportallogin",
-        "org.localsend.localsend_app"
-      ]
+      "exclude_package": ["com.android.captiveportallogin"]
     },
     {
       "type": "mixed",
@@ -285,22 +265,6 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "🖥️ SSH",
-      "type": "selector",
-      "outbounds": [
-        "🌏 日韩台新",
-        "🐢 直连",
-        "📌 单选节点",
-        "🇭🇰 香港节点",
-        "🇯🇵 日本节点",
-        "🇰🇷 韩国节点",
-        "🇹🇼 台湾节点",
-        "🇸🇬 新加坡节点",
-        "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
       "tag": "🇭🇰 香港节点",
       "type": "urltest",
       "outbounds": ["{all}"],
@@ -423,11 +387,6 @@
         "outbound": "🐢 直连"
       },
       {
-        "process_name": ["localsend", "localsend_app.exe"],
-        "action": "route",
-        "outbound": "🐢 直连"
-      },
-      {
         "clash_mode": "direct",
         "action": "route",
         "outbound": "🐢 直连"
@@ -436,21 +395,6 @@
         "clash_mode": "global",
         "action": "route",
         "outbound": "🚀 默认出站"
-      },
-      {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "process_name": ["ssh", "ssh.exe", "ssh-agent.exe"]
-          },
-          {
-            "rule_set": ["geoip_cn", "geosite_cn"],
-            "invert": true
-          }
-        ],
-        "action": "route",
-        "outbound": "🖥️ SSH"
       },
       {
         "protocol": "bittorrent",
