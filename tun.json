@@ -42,14 +42,6 @@
     ],
     "rules": [
       {
-        "domain_suffix": [               
-          "haidan.video",
-          "pttime.org"
-        ],
-        "server": "国际 DNS",
-        "outbound": "🇹🇼 台湾节点"
-      },
-      {
         "outbound": "any",
         "action": "route",
         "server": "中国 DNS",
@@ -360,6 +352,13 @@
     "auto_detect_interface": true,
     "final": "🚀 默认出站",
     "rules": [
+      {
+        "domain_suffix": [               
+          "haidan.video",
+          "pttime.org"
+        ],
+        "outbound": "🇹🇼 台湾节点"
+      },
       {
         "inbound": ["mixed-in", "tun-in"],
         "action": "sniff"
