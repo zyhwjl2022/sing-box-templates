@@ -42,9 +42,12 @@
     ],
     "rules": [
       {
-      "type": "domain",
-      "domain": ["*.haidan.video", "*pttime.org"],
-      "outbound": "🇹🇼 台湾节点"
+        "domain_suffix": [               
+          "haidan.video",
+          "pttime.org"
+        ],
+        "server": "国际 DNS",
+        "outbound": "🇹🇼 台湾节点"
       },
       {
         "outbound": "any",
