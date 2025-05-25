@@ -353,13 +353,6 @@
     "final": "🚀 默认出站",
     "rules": [
       {
-        "domain_suffix": [               
-          "haidan.video",
-          "pttime.org"
-        ],
-        "outbound": "🇹🇼 台湾节点"
-      },
-      {
         "inbound": ["mixed-in", "tun-in"],
         "action": "sniff"
       },
